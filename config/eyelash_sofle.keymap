@@ -85,6 +85,15 @@
 
     };
 
+    combos {
+        compatible = "zmk,combos";
+        cmb_t4 {
+            timeout-ms = <50>;
+            key-positions = <59 63>; // Right SPMO + K_APP/L3
+            bindings = <&tog 4>;
+        };
+    };
+
     behaviors {
         lcmo: lctrl_mo {
             compatible = "zmk,behavior-hold-tap";
@@ -125,10 +134,10 @@
 
         layer0 {
             bindings = <
-&lcmo 2 ESC &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp MINUS
-&kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp BSLH
-&mo 1       &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp APOS
-&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &kp RSHFT
+&lcmo 2 ESC &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp MINUS
+&kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp BSLH
+&mo 1       &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT   &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp APOS
+&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &kp RSHFT
 &kp C_MUTE  &kp LGUI   &kp LEFT_ALT  &mo 2         &kp LCTRL   &kp SPACE    &kp ENTER    &spmo 1 0  &kp ENTER  &kp BSPC      &kp RCTRL     &lt 3 K_APP
             >;
 
@@ -154,7 +163,7 @@
         layer_2 {
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp EQUAL
-&kp LSHFT   &kp PG_UP        &kp UP          &kp PG_DN        &trans           &trans             &mmv MOVE_DOWN   &kp F11          &kp F12          &kp UP      &kp MINUS  &kp EQUAL         &kp CAPS
+&kp LSHFT   &kp PG_UP        &kp UP          &kp PG_DN        &trans           &kp PG_DN          &mmv MOVE_DOWN   &kp F11          &kp F12          &kp UP      &kp MINUS  &kp EQUAL         &kp CAPS
 &trans      &kp LEFT         &kp DOWN        &kp RIGHT        &kp HOME         &kp END            &mmv MOVE_LEFT   &trans           &kp LEFT         &kp DOWN    &kp RIGHT  &kp LBRC          &kp RBRC
 &trans      &trans           &trans          &trans           &trans           &trans             &mmv MOVE_RIGHT  &trans           &trans           &kp INSERT  &trans     &trans            &trans
 &kp C_MUTE  &mo 3            &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &kp RS(ENTER)      &kp DEL     &trans     &kp CAPS
@@ -178,6 +187,19 @@
         };
 
         layer_4 {
+            bindings = <
+&trans     &trans           &trans           &trans           &trans           &trans           &trans           &trans           &trans           &trans           &trans           &trans       &trans
+&trans     &trans           &trans           &trans           &trans           &trans           &mmv MOVE_DOWN   &trans           &trans           &kp UP           &trans           &trans       &trans
+&trans     &trans           &trans           &trans           &trans           &trans           &mmv MOVE_LEFT   &trans           &kp LEFT         &kp DOWN         &kp RIGHT           &trans       &trans
+&trans     &trans           &trans           &trans           &trans           &trans           &mmv MOVE_RIGHT  &trans           &trans           &trans           &trans           &trans       &trans
+&trans     &trans           &trans           &trans           &trans           &trans           &mkp LCLK        &trans           &trans           &trans           &trans           &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+            display-name = "IJKL Dirs";
+        };
+
+        layer_5 {
             bindings = <
 &trans     &trans           &trans           &trans           &trans           &trans           &trans           &trans           &trans           &trans           &trans           &trans       &trans
 &trans     &trans           &trans           &trans           &trans           &trans           &mmv MOVE_DOWN   &trans           &trans           &trans           &trans           &trans       &trans
