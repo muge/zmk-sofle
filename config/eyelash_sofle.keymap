@@ -89,7 +89,7 @@
         compatible = "zmk,combos";
         cmb_t4 {
             timeout-ms = <50>;
-            key-positions = <59 63>; // Right SPMO + K_APP/L3
+            key-positions = <6 59>; // 6 + Right SPMO
             bindings = <&tog 4>;
         };
         cmb_np {
