@@ -391,7 +391,7 @@ layers:
   - KP 0
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [59, 63]
+- p: [58, 59]
   k: {t: IJKL Dirs, h: toggle}
 - p: [62, 63]
   k: {t: Numpad, h: toggle}
