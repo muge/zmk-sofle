@@ -138,7 +138,7 @@
 &kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp BSLH
 &mo 1       &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT   &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp APOS
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &kp RSHFT
-&kp C_MUTE  &kp LGUI   &kp LEFT_ALT  &mo 2         &kp LCTRL   &kp SPACE    &kp ENTER    &spmo 1 0  &kp ENTER  &kp BSPC      &kp RCTRL     &lt 3 K_APP
+&kp C_MUTE  &kp LGUI   &kp LEFT_ALT  &mo 2         &kp LCTRL   &kp SPACE    &tog 4    &spmo 1 0  &kp ENTER  &kp BSPC      &kp RCTRL     &lt 3 K_APP
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -192,7 +192,7 @@
 &trans     &trans           &trans           &trans           &trans           &trans           &mmv MOVE_DOWN   &trans           &trans           &kp UP           &trans           &trans       &trans
 &trans     &trans           &trans           &trans           &trans           &trans           &mmv MOVE_LEFT   &trans           &kp LEFT         &kp DOWN         &kp RIGHT        &trans       &trans
 &trans     &trans           &trans           &trans           &trans           &trans           &mmv MOVE_RIGHT  &trans           &trans           &trans           &trans           &trans       &trans
-&trans     &trans           &trans           &trans           &trans           &trans           &mkp LCLK        &trans           &trans           &trans           &trans           &trans
+&trans     &trans           &trans           &trans           &trans           &trans           &trans        &trans           &trans           &trans           &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
