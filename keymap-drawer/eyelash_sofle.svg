@@ -601,10 +601,14 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
 </g>
-<g transform="translate(462, 91)" class="key enter keypos-58">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key enter side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key enter"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-9" y="-13" height="18" width="18.0" class="key enter tap glyph mdi:keyboard-return"/>
+<g transform="translate(462, 91)" class="key keypos-58">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<a href="#IJKL-Dirs">
+<text x="0" y="-4" class="key tap layer-activator">
+<tspan x="0" dy="-1.2em">IJKL</tspan><tspan x="0" dy="1.2em">Dirs</tspan>
+</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(535, 294) rotate(-30.0)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -636,16 +640,6 @@ rect.held, rect.combo.held {
 <text x="0" y="24" class="key hold layer-activator">Meta</text>
 </a></g>
 <g class="combo combopos-0">
-<path d="M498,192 l-30,-84" class="combo"/>
-<path d="M498,192 l30,84" class="combo"/>
-<rect rx="6" ry="6" x="484" y="180" width="28" height="26" class="combo"/>
-<a href="#IJKL-Dirs">
-<text x="498" y="192" class="combo tap layer-activator">
-<tspan x="498" dy="-0.6em">IJKL</tspan><tspan x="498" dy="1.2em">Dirs</tspan>
-</text>
-</a><text x="498" y="204" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-1">
 <rect rx="6" ry="6" x="742" y="242" width="28" height="26" class="combo"/>
 <a href="#Numpad">
 <text x="756" y="256" class="combo tap layer-activator">Numpad</text>
@@ -999,16 +993,6 @@ rect.held, rect.combo.held {
 <use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-caps"/>
 </g>
 <g class="combo combopos-0">
-<path d="M498,192 l-30,-84" class="combo"/>
-<path d="M498,192 l30,84" class="combo"/>
-<rect rx="6" ry="6" x="484" y="180" width="28" height="26" class="combo"/>
-<a href="#IJKL-Dirs">
-<text x="498" y="192" class="combo tap layer-activator">
-<tspan x="498" dy="-0.6em">IJKL</tspan><tspan x="498" dy="1.2em">Dirs</tspan>
-</text>
-</a><text x="498" y="204" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-1">
 <rect rx="6" ry="6" x="742" y="242" width="28" height="26" class="combo"/>
 <a href="#Numpad">
 <text x="756" y="256" class="combo tap layer-activator">Numpad</text>
@@ -1354,16 +1338,6 @@ rect.held, rect.combo.held {
 <use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-caps"/>
 </g>
 <g class="combo combopos-0">
-<path d="M498,192 l-30,-84" class="combo"/>
-<path d="M498,192 l30,84" class="combo"/>
-<rect rx="6" ry="6" x="484" y="180" width="28" height="26" class="combo"/>
-<a href="#IJKL-Dirs">
-<text x="498" y="192" class="combo tap layer-activator">
-<tspan x="498" dy="-0.6em">IJKL</tspan><tspan x="498" dy="1.2em">Dirs</tspan>
-</text>
-</a><text x="498" y="204" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-1">
 <rect rx="6" ry="6" x="742" y="242" width="28" height="26" class="combo"/>
 <a href="#Numpad">
 <text x="756" y="256" class="combo tap layer-activator">Numpad</text>
@@ -1725,16 +1699,6 @@ rect.held, rect.combo.held {
 <text x="0" y="-4" class="key held tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 <g class="combo combopos-0">
-<path d="M498,192 l-30,-84" class="combo"/>
-<path d="M498,192 l30,84" class="combo"/>
-<rect rx="6" ry="6" x="484" y="180" width="28" height="26" class="combo"/>
-<a href="#IJKL-Dirs">
-<text x="498" y="192" class="combo tap layer-activator">
-<tspan x="498" dy="-0.6em">IJKL</tspan><tspan x="498" dy="1.2em">Dirs</tspan>
-</text>
-</a><text x="498" y="204" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-1">
 <rect rx="6" ry="6" x="742" y="242" width="28" height="26" class="combo"/>
 <a href="#Numpad">
 <text x="756" y="256" class="combo tap layer-activator">Numpad</text>
@@ -2038,10 +2002,10 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(462, 91)" class="key keypos-58">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:mouse-left-click-outline" xlink:href="#mdi:mouse-left-click-outline" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:mouse-left-click-outline"/>
+<g transform="translate(462, 91)" class="key trans keypos-58">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(535, 294) rotate(-30.0)" class="key trans keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -2069,16 +2033,6 @@ rect.held, rect.combo.held {
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g class="combo combopos-0">
-<path d="M498,192 l-30,-84" class="combo"/>
-<path d="M498,192 l30,84" class="combo"/>
-<rect rx="6" ry="6" x="484" y="180" width="28" height="26" class="combo"/>
-<a href="#IJKL-Dirs">
-<text x="498" y="192" class="combo tap layer-activator">
-<tspan x="498" dy="-0.6em">IJKL</tspan><tspan x="498" dy="1.2em">Dirs</tspan>
-</text>
-</a><text x="498" y="204" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-1">
 <rect rx="6" ry="6" x="742" y="242" width="28" height="26" class="combo"/>
 <a href="#Numpad">
 <text x="756" y="256" class="combo tap layer-activator">Numpad</text>
@@ -2451,16 +2405,6 @@ rect.held, rect.combo.held {
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g class="combo combopos-0">
-<path d="M498,192 l-30,-84" class="combo"/>
-<path d="M498,192 l30,84" class="combo"/>
-<rect rx="6" ry="6" x="484" y="180" width="28" height="26" class="combo"/>
-<a href="#IJKL-Dirs">
-<text x="498" y="192" class="combo tap layer-activator">
-<tspan x="498" dy="-0.6em">IJKL</tspan><tspan x="498" dy="1.2em">Dirs</tspan>
-</text>
-</a><text x="498" y="204" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-1">
 <rect rx="6" ry="6" x="742" y="242" width="28" height="26" class="combo"/>
 <a href="#Numpad">
 <text x="756" y="256" class="combo tap layer-activator">Numpad</text>

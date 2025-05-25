@@ -59,7 +59,7 @@ layers:
   - Func 2
   - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: IJKL Dirs, h: toggle}
   - {t: '&spc', h: Func}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -319,7 +319,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -391,7 +391,5 @@ layers:
   - KP 0
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [58, 59]
-  k: {t: IJKL Dirs, h: toggle}
 - p: [62, 63]
   k: {t: Numpad, h: toggle}
