@@ -85,6 +85,8 @@
 
     };
 
+    combos {
+        compatible = "zmk,combos";
         cmb_np {
             timeout-ms = <50>;
             key-positions = <62 63>; // Right CTRL + K_APP/L3
@@ -136,7 +138,7 @@
 &kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp BSLH
 &mo 1       &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT   &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp APOS
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &kp RSHFT
-&kp C_MUTE  &kp LGUI   &kp LEFT_ALT  &mo 2         &kp LCTRL   &kp SPACE    &tog 4   &spmo 1 0  &kp ENTER  &kp BSPC      &kp RCTRL     &lt 3 K_APP
+&kp C_MUTE  &kp LGUI   &kp LEFT_ALT  &mo 2         &kp LCTRL   &kp SPACE    &kp ENTER    &spmo 1 0  &kp ENTER  &kp BSPC      &kp RCTRL     &lt 3 K_APP
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -177,7 +179,7 @@
 &trans     &bt BT_CLR       &bt BT_CLR_ALL   &trans           &trans           &trans           &mmv MOVE_DOWN   &kp F11          &kp F12          &rgb_ug RGB_HUI  &kp UNDER        &kp PLUS     &trans
 &trans     &out OUT_USB     &out OUT_BLE     &trans           &trans           &trans           &mmv MOVE_LEFT   &rgbht 0 0       &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &kp LBRC     &kp RBRC
 &trans     &sys_reset       &trans           &bootloader      &trans           &trans           &mmv MOVE_RIGHT  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &bootloader  &trans
-&trans     &trans           &trans           &trans           &trans           &trans        &mkp LCLK        &trans           &trans           &trans           &sys_reset       &soft_off
+&trans     &trans           &trans           &trans           &trans           &mkp RCLK        &mkp LCLK        &trans           &trans           &trans           &sys_reset       &soft_off
             >;
 
             sensor-bindings = <&scroll_encoder>;
